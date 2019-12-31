@@ -32,9 +32,11 @@ var (
 	ErrUnavailable = errors.New("no database available")
 
 	// Local cached copy of a database downloaded from a URL.
-	defaultDB = filepath.Join(os.TempDir(), "freegeoip", "db.gz")
+	defaultDB = "GeoLite2-City.mmdb.gz"
 
 	// MaxMindDB is the URL of the free MaxMind GeoLite2 database.
+	// https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-City&license_key=0Bcw0M8zyp3yQyjI&suffix=tar.gz
+	// MaxMindDB = "http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz"
 	MaxMindDB = "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-City&license_key=0Bcw0M8zyp3yQyjI&suffix=tar.gz"
 )
 
